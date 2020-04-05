@@ -9,6 +9,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
 
         <link rel="stylesheet" href="css/mantou.css">
+        <link rel="stylesheet" href="css/animate.min.css">
 
         <script src="js/libs/jquery.min.js"></script>
 
@@ -59,7 +60,7 @@
 							  <li class="item" id="${index}">
 								  <div class="border-wrap">
 									  <div class="cover shadow-cover "><div width="210px" height="298px"><div class="cover-title">${title}</div> <div class="cover-author">${author}</div><div class="cover-date small-name">${year}年</div></div></div>
-									<p class="actions"><span><a href="#">详情</a></span><span class="right"><a href="./?bookPath=./book/${index}s.epub" target="_blank">阅读</a></span></p>
+									<p class="actions"><span class=""><a href="/reader.html?bookPath=./book/${index}s.epub" target="_blank">阅读</a></span></p>
 								</div>
 							  </li>
 						`
@@ -75,8 +76,17 @@
 
     </head>
     <body>
+		<div id="right-nav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+			<a href="#">图书列表</a>
+			<a href="#">图书报错</a>
+			<a href="#">功能反馈</a>
+			<a href="#">关于我们</a>
+		  </div>
+		</div>
       <div id="header">
-	      <div class="logo">
+	      <div class="logo" onclick="openNav()">
 		      馒头阅读
 	      </div>
       </div>
@@ -86,13 +96,23 @@
               </div>
           </section>
       </div>
-      <div class="overlay"></div>
-              </div>
           </section>
       </div>
-      <div class="overlay"></div>
       <div id="footer">
+
           <span>Created by subdragon with ♥ in Beijing 2020 </span>
       </div>
+<script>
+function openNav() {
+	$("#right-nav").removeClass("slideOutRight");
+	$("#right-nav").addClass("animated");
+	$("#right-nav").addClass("slideInRight");
+}
+
+function closeNav() {
+	$("#right-nav").removeClass("slideInRight");
+	$("#right-nav").addClass("slideOutRight");
+}
+</script>
     </body>
 </html>
