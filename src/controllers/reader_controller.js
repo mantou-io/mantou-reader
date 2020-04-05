@@ -124,7 +124,7 @@ EPUBJS.reader.ReaderController = function(book) {
 
 	rendition.on("layout", function(props){
 		if(props.spread === true) {
-			showDivider();
+			hideDivider();
 		} else {
 			hideDivider();
 		}

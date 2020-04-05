@@ -1,0 +1,91 @@
+/*
+@font-face {
+    font-family: 'source-han-sans-sc';
+    src: url('SourceHanSansSC-Normal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'source-han-serif-sc';
+    src: url('../font/Mantou-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'source-han-sans-sc';
+    src: url('../font/SourceHanSansSC-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FZKai';
+    src: url('../font/FZKTJW.TTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mantou';
+    src: url('../font/GeorgiaPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color:#6D8B73;
+}
+
+a:hover {
+    color: #374137;
+}
+
+body {
+    font-family:"source-han-serif-sc";
+    text-rendering:optimizeLegibility;
+    font-size:106%;
+    line-height:2.0;
+    text-align: justify;                                                       
+}
+p.calibre5 {
+    text-align:justify;
+}
+p .num-r {
+    margin-right:0.125em;
+}
+p .num-l {
+    margin-left:0.125em;
+}
+p .eword-r {
+    margin-right:0.125em;
+}
+p .eword-l {
+    margin-left:0.125em;
+}
+
+/* Recommended Text indent */                                                  
+/* 全文首行缩进2各个中文字符 */                                                
+p {                                                                            
+    text-indent: 2em;                                                          
+}
+* {
+    margin:0;
+    padding:0;
+}
+sup img {                                                                      
+    width:0.96em;                                                              
+    height:0.96em;                                                             
+    margin:0;                                                                  
+    padding-top:0.5em;                                                         
+    vertical-align: text-top;                                                  
+}
+
+h1{font-weight:bold;text-align:center;padding: 1.61em 0;width:100%;}/*一级标题*/
+h2{font-weight:bold;text-indent:0em;text-align:center;padding: 1.61em 0}/*二级标题*/            
+h3{font-weight:bold;text-indent:0em;text-align:left;}/*三级标题*/              
+h4{font-weight:normal;text-indent:2em;text-align:left}/*四级标题*/             
+h5{font-size:1em;font-weight:normal;text-align:left;text-indent:2em;}/*五级标题*/
+h6{font-size:1em;font-weight:normal;text-align:left;text-indent:2em;}/*六级标题*/

@@ -81,7 +81,8 @@ button,
 input,
 select,
 textarea {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'source-han-serif-sc';
 }
 
 /*
@@ -452,11 +453,11 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* 
+/*
 input[type="search"] {
     -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 */

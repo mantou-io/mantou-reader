@@ -3310,6 +3310,8 @@ EPUBJS.Reader = function(bookPath, _options) {
 		this.rendition.on("keydown", reader.ReaderController.arrowKeys.bind(this));
 
 		this.rendition.on("selected", this.selectedRange.bind(this));
+        this.rendition.themes.register("tan", "css/themes.css");
+        this.rendition.themes.select("tan");
 	}.bind(this)).then(function() {
 		reader.ReaderController.hideLoader();
 	}.bind(this));
