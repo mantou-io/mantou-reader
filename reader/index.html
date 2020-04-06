@@ -90,9 +90,11 @@
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <div class="overlay-content">
 			<a href="#">图书列表</a>
-			<a href="#">图书报错</a>
-			<a href="#">功能反馈</a>
-			<a href="#">关于我们</a>
+			<a href="https://github.com/mantou-io/mantou-books/issues" target="_blank">图书报错</a>
+			<a href="https://github.com/mantou-io/mantou-reader/issues" target="_blank">功能反馈</a>
+			<a href="https://github.com/mantou-io/mantou-serif" target="_blank">馒头字体</a>
+			<a href="javascript:;" id="contact-us">联系我们</a>
+            <span id="us-email" class="m-top1">subdragon@gmail.com<span>
 		  </div>
 		</div>
       <div id="header">
@@ -123,6 +125,11 @@ function closeNav() {
 	$("#right-nav").removeClass("slideInRight");
 	$("#right-nav").addClass("slideOutRight");
 }
+
+$("#contact-us").click(function(){
+    $("#us-email").toggle();
+})
+
 </script>
     </body>
 </html>

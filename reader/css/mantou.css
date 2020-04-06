@@ -9,6 +9,10 @@ body {
     visibility: visible;
 }
 
+#us-email {
+    display:none;
+}
+
 .overlay {
  visibility: hidden;
   height: 100%;
@@ -32,6 +36,12 @@ margin-left:70%;
   text-align: center;
   margin-top: 30px;
 }
+.overlay-content span{
+  display: block;
+  font-size: 24px;
+	color: #6D8B73;
+}
+
 
 .overlay a {
   padding: 8px;
