@@ -50,6 +50,12 @@ body {
     line-height:2.0;
     text-align: justify;                                                       
 }
+p .alpha-r {
+    margin-right:0.125em;
+}
+p .alpha-l {
+    margin-left:0.125em;
+}
 p.calibre5 {
     text-align:justify;
 }
