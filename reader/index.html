@@ -38,6 +38,7 @@
         <!-- <script src="js/libs/jquery.highlight.js"></script> -->
         <!-- <script src="js/hooks/extensions/highlight.js"></script> -->
 	<script>
+        /*
 		  (function(d) {
 			      var config = {
 				            kitId: 'sff2ciq',
@@ -46,6 +47,7 @@
 				          },
 				      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
 			    })(document);
+                */
 		$(function(){
 
 			$.get(
@@ -59,7 +61,6 @@
 						    books.push(item.trim().split(/\s+/));
                         }
 					});
-					console.log(books);
 					var count = 0;
 					books.forEach(function(item) {
                         let index = item[0]
@@ -70,7 +71,7 @@
 						var book_list_t = ` 
 							  <li class="item" id="${index}">
 								  <div class="border-wrap">
-									  <div class="cover shadow-cover "><div width="210px" height="298px"><div class="cover-title">${title}</div> <div class="cover-author">${author}</div><div class="cover-date small-name">${year}年</div></div></div>
+									  <div class="cover shadow-cover "><div width="210px" height="298px" style="display:flex; flex-direction:column; flex:1"><div class="cover-title">${title}</div> <div class="cover-author">${author}</div><div class="cover-date small-name">${year}年</div></div></div>
 									<p class="actions"><span class=""><a href="/reader.html?bookPath=./book/${index}.epub" target="_blank">阅读</a></span></p>
 								</div>
 							  </li>
