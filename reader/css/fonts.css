@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'source-han-serif-sc';
+    src: url('../font/Mantou-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source-han-serif-sc';
+    src: url('../font/Mantou-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
