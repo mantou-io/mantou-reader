@@ -100,6 +100,21 @@
             <span id="us-email" class="m-top1">subdragon@gmail.com<span>
 		  </div>
 		</div>
+
+		<div id="flow-notice" class="overlay">
+		  <div class="overlay-content">
+              <span style="padding:0 50px">
+                <span class="warn-color"> 流量消耗提醒
+                </span>
+                <span class="m-top1 warn-color">
+                    为达到最佳浏览效果，第一次访问本网站需要加载 30MB 左右大小的字体。建议在网络流畅，流量成本低的情况下第一次打开。
+                </span>
+                <span class="m-top1">
+                    <a href="javascript:void(0)" class="closeflow" onclick="closeFlow()">我已知晓 马上打开</a>
+                </span>
+              </span>
+		  </div>
+		</div>
       <div id="header">
 	      <div class="logo" onclick="openNav()">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -133,6 +148,19 @@ function closeNav() {
 	$("#right-nav").addClass("slideOutRight");
 }
 
+function openFlow() {
+	$("#flow-notice").removeClass("slideOutUp");
+	$("#flow-notice").addClass("animated");
+	$("#flow-notice").addClass("slideInDown");
+}
+
+function closeFlow() {
+    localStorage.setItem('mantou', 1);
+    get_font();
+	$("#flow-notice").removeClass("slideInDown");
+	$("#flow-notice").addClass("slideOutUp");
+}
+
 $("#contact-us").click(function(){
     $("#us-email").toggle();
 })
@@ -140,13 +168,21 @@ $("#contact-us").click(function(){
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-var WebFontConfig = {
-  custom: {
-    families: ['source-han-serif-sc'],
-    urls: ['css/fonts.css']
-  }
-};
-WebFont.load(WebFontConfig);
+        if(localStorage.getItem('mantou') != 1) {
+            openFlow();
+        } else {
+            get_font();
+        }
+
+function get_font() {
+    var WebFontConfig = {
+      custom: {
+        families: ['source-han-serif-sc'],
+        urls: ['css/fonts.css']
+      }
+    };
+    WebFont.load(WebFontConfig);
+}
     </script>
     </body>
 </html>

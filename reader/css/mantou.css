@@ -29,13 +29,22 @@ table {
 
 #us-email {
     display:none;
+    font-size:16px;
+}
+
+#right-nav.overlay {
+  width: 30%;
+  margin-left:70%;
+}
+
+#flow-notice.overlay {
+  width: 50%;
+  margin-left:25%;
 }
 
 .overlay {
  visibility: hidden;
   height: 100%;
-  width: 30%;
-margin-left:70%;
   position: fixed;
     visibility: hidden;
   z-index: 1;
@@ -54,10 +63,21 @@ margin-left:70%;
   text-align: center;
   margin-top: 30px;
 }
-.overlay-content span{
-  display: block;
-  font-size: 24px;
+.alpha-r {
+    margin-right:0.125em;
+}
+
+.alpha-l {
+    margin-left:0.125em;
+}
+
+
+#right-nav.overlay-content span{
 	color: #6D8B73;
+}
+.overlay-content span{
+  font-size: 24px;
+    display: block;
 }
 
 
@@ -117,6 +137,9 @@ a:hover {
 cursor: pointer;
 }
 
+.warn-color {
+    color:#BE2B34;
+}
 .m-top1 {
 	margin-top:24px;
 }
