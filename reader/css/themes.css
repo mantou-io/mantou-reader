@@ -55,10 +55,11 @@ a:hover {
 body {
     font-family:"source-han-serif-sc";
     text-rendering:optimizeLegibility;
-    font-size:106%;
+    font-size:18px;
     line-height:2.0;
     text-align: justify;                                                       
 }
+
 p .alpha-r {
     margin-right:0.125em;
 }

@@ -30,6 +30,7 @@ table {
 #us-email {
     display:none;
     font-size:16px;
+    color:#6D8B73;
 }
 
 #right-nav.overlay {
@@ -39,7 +40,18 @@ table {
 
 #flow-notice.overlay {
   width: 50%;
+  margin:0 auto;
   margin-left:25%;
+}
+@media (max-width: 600px) {
+#flow-notice.overlay {
+  width: 100%;
+  margin:0 auto;
+}
+#right-nav.overlay {
+  width: 60%;
+  margin-left:40%;
+}
 }
 
 .overlay {
