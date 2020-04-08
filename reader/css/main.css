@@ -49,7 +49,7 @@ body {
   position: relative;
   color: #4f4f4f;
   font-weight: 100;
-  font-family:'source-han-serif-sc', Georgia, "Times New Roman", Times, serif;
+  font-family:'source-han-serif-sc',Helvetica,Arial,sans-serif, Georgia, "Times New Roman", Times, serif;
   opacity: .5;
   text-align: center;
   -webkit-transition: opacity .5s;
@@ -339,7 +339,7 @@ input:-ms-placeholder {
 #bookmarksView li {
   margin-bottom:10px;
   width: 225px;
-  font-family:'source-han-serif-sc', Georgia, "Times New Roman", Times, serif;
+  font-family:'source-han-serif-sc',Helvetica,Arial,sans-serif, Georgia, "Times New Roman", Times, serif;
   list-style: none;
   outline:none;
   text-transform: capitalize;
@@ -428,7 +428,7 @@ input:-ms-placeholder {
 #searchResults li {
   margin-bottom:10px;
   width: 225px;
-  font-family:'source-han-serif-sc', Georgia, "Times New Roman", Times, serif;
+  font-family:'source-han-serif-sc',Helvetica,Arial,sans-serif,  Georgia, "Times New Roman", Times, serif;
   list-style: none;
   outline:none;
 }
@@ -513,7 +513,7 @@ input:-ms-placeholder {
 
 #settingsPanel h3 {
   color:#f1f1f1;
-  font-family:'source-han-serif-sc', Georgia, "Times New Roman", Times, serif;
+  font-family:'source-han-serif-sc',Helvetica,Arial,sans-serif, Georgia, "Times New Roman", Times, serif;
   margin-bottom:10px;
 }
 

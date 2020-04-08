@@ -116,7 +116,7 @@
 		  </div>
 		</div>
       <div id="header">
-	      <div class="logo" onclick="openNav()">
+	      <div class="logo" onclick="openNav()" style="animation-iteration-count:infinite">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="29" height="29"
                   viewBox="0 0 172 172"
@@ -166,7 +166,7 @@ $("#contact-us").click(function(){
 })
 
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/webfont.js"></script>
     <script>
         if(localStorage.getItem('mantou') != 1) {
             openFlow();
@@ -178,8 +178,18 @@ function get_font() {
     var WebFontConfig = {
       custom: {
         families: ['source-han-serif-sc'],
-        urls: ['css/fonts.css']
-      }
+        urls: ['css/fonts.css'],
+      },
+      loading: function () {
+        $(".logo").addClass("animated");
+        $(".logo").addClass("pulse");
+      },
+      active: function () {
+        $(".logo").removeClass("animated");
+        $(".logo").removeClass("pulse");
+        $(".logo").removeClass("heartBeat");
+      },
+
     };
     WebFont.load(WebFontConfig);
 }
