@@ -1,5 +1,5 @@
 body {
-	font-family: 'source-han-serif-sc',Helvetica,Arial,sans-serif;
+	font-family: 'source-han-serif-sc','STSong', 'SimSun', Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-style: normal;
 	font-size: 14px;
@@ -140,7 +140,7 @@ a:hover {
 
 
 #header .logo {
-    font-family: 'source-han-serif-sc', Helvetica,Arial,sans-serif;
+	font-family: 'source-han-serif-sc','STSong', 'SimSun', Helvetica,Arial,sans-serif;
     font-weight: bold;
     font-style: normal;
     text-align: center;

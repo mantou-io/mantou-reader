@@ -155,10 +155,10 @@ function openFlow() {
 }
 
 function closeFlow() {
-    localStorage.setItem('mantou', 1);
     get_font();
 	$("#flow-notice").removeClass("slideInDown");
 	$("#flow-notice").addClass("slideOutUp");
+    localStorage.setItem('mantou', 1);
 }
 
 $("#contact-us").click(function(){
@@ -188,6 +188,7 @@ function get_font() {
         $(".logo").removeClass("animated");
         $(".logo").removeClass("pulse");
         $(".logo").removeClass("heartBeat");
+        $('.logo').removeAttr('style');
       },
 
     };
